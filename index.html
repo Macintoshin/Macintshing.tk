@@ -1,60 +1,85 @@
-<!DOCTYPE html>
+<html lang="en" class="tui-bg-orange-black">
+
 <head>
-    <link rel="icon" href="./icon.png">
-    <body style="font-family:Verdana;"></body>
-    <Title>Mac's Webpage</Title>
+    <meta charset="UTF-8">
+    <title>Window and Panels Example</title>
+    <script src="./dist/tuicss.min.js"></script>
+    <link rel="stylesheet" href="./dist/tuicss.min.css">
     <style>
-        body {background-color: rgb(26, 23, 23)}
-        h1 {color: whitesmoke}
-        h2 {color: whitesmoke}
-        h3 {color: whitesmoke}
-        h4 {color: whitesmoke}
-        li {color: whitesmoke}
-        p {color: whitesmoke}
+        .tui-window, .tui-panel {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .info-text {
+            margin-bottom: 10px;
+            color: white;
+        }
     </style>
 </head>
-<html>
-<center>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="fishtunez.html"><h1>Macintoshing's Webpage</h1></a>
-    <hr color="red">
-    <hr color="orange">
-    <hr color="yellow">
-    <hr color="green">
-    <hr color="blue">
-    <br>
-    <br>
-    <h2>QOTD: Yesterday was yesterday</h2>
-    <img src="him.png">
-<div id="Pagesel"> 
-    <a href="about.html"><h4>About me</h4></a>
-    <a href="sites.html"><h4>Other Sites</h4></a>
-    <a href="news.html"><h4>Updates</h4></a>
-    <a href="Social.html"><h4>Social Links</h4></a>
-</div>
-<br>
-<br>
-</center>
-</html>
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,
-                   initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title> Document </title>
-    <style>
-    div {
-        width: 300px;
-    }
 
-    hr {
-        position: relative;
-        top: 20px;
-        border: none;
-        height: 5px;
-        margin-bottom: 0px;
-    }
-    </style>
+<body>
+    <div class="center" style="margin-top: 100px; margin-bottom: 100px">
+
+        <!-- Site name -->
+        <div class="info-text"><Simple window></div>
+        <div class="tui-window">
+            <fieldset class="tui-fieldset">
+                <legend>Hello!</legend>
+                <center>Macintoshing's Site</center>
+
+            </fieldset>
+        </div>
+        <!-- Fieldset features -->
+        <div class="info-text"></div>
+        <div class="tui-window blue-168 white-255-text">
+            <fieldset class="tui-fieldset tui-border-solid white-border">
+                <legend class="center white-255-text">Information</legend>
+                <button class="tui-fieldset-button left"><span class="green-255-text">↑</span></button>
+                <button class="tui-fieldset-button"><span class="green-255-text">■</span></button>
+                hi! my name is mac, I am currently learning html with my friend <a style="color:aqua;" href="https://praxor.wtf/">Praxor</a>.<br><br>
+                 I am 13 and I love computers :) (i also like cats)
+                <br><br>
+                <div class="tui-fieldset-text">Text format: UTF-8</div>
+                <div class="tui-fieldset-text right">Ln: 2, Col: 5</div>
+            </fieldset>
+        </div>
+
+        <!-- Simple panel -->
+        <div class="info-text">QOTD</div>
+        <div class="tui-panel cyan-168 black-255-text">
+            <div class="tui-panel-content">
+                <b>QOTD:</b> “Oh come on SpongeBob! You know, I wumbo, You wumbo,<br> He she me wumbo, wumbo,<br> Wumboing, We'll have thee wumbo,<br> Wumborama, Wumbology, The study of wumbo?<br> It's first grade SpongeBob!” 
+            </div>
+        </div>
+
+        <!-- Panel title -->
+        <div class="info-text"></div>
+        <div class="tui-panel white-168 black-255-text">
+            <div class="tui-panel-header">
+                About
+            </div>
+            <div class="tui-panel-content">
+                This site wade with some MS-DOS CSS design.<br> You can find the source code for it here: 
+                <br><br>
+                <div class="center">
+                    <a href="https://github.com/vinibiavatti1/TuiCss"><button class="tui-button white-255" style="width: 80px">Visit Source</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</tbody>
+</table>
+</div>
+<div class="tui-tab-content tui-content" id="tab-2-content">
+</div>
+<div class="tui-statusbar absolute cyan-168">
+<ul>
+    <li><a href="https://open.spotify.com/playlist/4ZqGzOBydkHMJyEx7tNMZf?si=ac77ca5bc76a439f"><span class="white-255-text">♫</span> Spotify</a></li>
+    <li><a href="https://discord.gg/ZSCDM3n8US"><span class="white-255-text">☄</span> Discord server</a></li>
+</ul>
+</div>
+</div>
+</body>
+
+</html>
